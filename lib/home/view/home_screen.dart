@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:quotes_app_getx/home/controller/home_controller.dart';
 import 'package:quotes_app_getx/utils/colorList.dart';
+import 'package:quotes_app_getx/utils/db_helper.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -26,7 +27,9 @@ class _HomeScreenState extends State<HomeScreen> {
           title: const Text("Welcome To Quotes"),
           actions: [
             IconButton(
-                onPressed: () {}, icon: const Icon(Icons.favorite_border))
+                onPressed: () {
+
+                }, icon: const Icon(Icons.favorite_border))
           ],
         ),
         body: Column(
