@@ -1,8 +1,9 @@
 class QuotesModel {
   int? id;
   String? category, image;
-  List<String> qoutesList = [];
-  List<String> authorList = [];
+  List<dynamic> qoutesList = [];
+  List<dynamic
+  > authorList = [];
 
 
   QuotesModel({

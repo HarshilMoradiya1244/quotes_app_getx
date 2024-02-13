@@ -4,7 +4,7 @@ import 'package:quotes_app_getx/utils/json_helper.dart';
 
 class HomeController extends GetxController{
 
-  RxList quotesList = [].obs;
+  RxList<QuotesModel> quotesList = <QuotesModel>[].obs;
 
   Future<void> getData()
   async {
