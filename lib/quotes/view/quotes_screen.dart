@@ -58,9 +58,9 @@ class _QuotesScreenState extends State<QuotesScreen> {
                           alignment: Alignment.bottomRight,
                           child: IconButton(
                               onPressed: () {
-                                QuotesModel model = QuotesModel(qoutesList: [txtQoutes.text], authorList: [txtAuthor.text]);
+                                QuotesModel model1 = QuotesModel(qoutesList: [txtQoutes.text], authorList: [txtAuthor.text]);
                                 DBHelper dbHelper = DBHelper();
-                                dbHelper.insertData(model);
+                                dbHelper.insertData(model1);
                               },
                               icon: const Icon(Icons.favorite_border)))
                     ],
