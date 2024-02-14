@@ -26,10 +26,24 @@ class _HomeScreenState extends State<HomeScreen> {
           centerTitle: true,
           title: const Text("Welcome To Quotes"),
           actions: [
-            IconButton(
-                onPressed: () {
 
-                }, icon: const Icon(Icons.favorite_border))
+                 PopupMenuButton(
+                   itemBuilder: (context) {
+                     return [
+                     PopupMenuItem(
+                       child: Row(
+                         children: [
+
+                           IconButton(onPressed: (){
+                             Get.toNamed("likedQuotes");
+                           }, icon: const Icon(Icons.favorite_border),),
+                           const Text("Favorite"),
+                         ],
+                       ),
+                     ),
+                     ];
+                   },
+                 )
           ],
         ),
         body: Column(

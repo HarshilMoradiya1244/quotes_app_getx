@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'package:path_provider/path_provider.dart';
 import 'package:path/path.dart';
+import 'package:quotes_app_getx/model/db_model.dart';
 import 'package:quotes_app_getx/model/quotes_model.dart';
 import 'package:sqflite/sqflite.dart';
 
@@ -22,22 +23,33 @@ class DBHelper{
     String path = join(directory.path, DB_NAME);
 
     return openDatabase(path, version: 1, onCreate: (db, version) {
-      String incomeTable =
-          "CREATE TABLE quotesTable(id INTEGER PRIMARY KEY AUTOINCREMENT, quotes TEXT, category TEXT,author TEXT)";
+      String quotesTable =
+          "CREATE TABLE quotes(id INTEGER PRIMARY KEY AUTOINCREMENT, quotes TEXT, category TEXT,author TEXT)";
       String categoryTable =
           "CREATE TABLE category(id INTEGER PRIMARY KEY AUTOINCREMENT,quotes TEXT, category TEXT,author TEXT)";
-      db.execute(incomeTable);
+      db.execute(quotesTable);
       db.execute(categoryTable);
     });
   }
 
-    Future<void> insertData(QuotesModel quotesModel) async {
+    Future<void> insertData(DbModel dbModel) async {
       dataBase = await checkDb();
-      dataBase!.insert("quotesTable", {
-        "category":quotesModel.category,
-        "quotes":quotesModel.qoutesList,
-        "author":quotesModel.authorList,
+      dataBase!.insert("quotes", {
+        "category":dbModel.category,
+        "quotes":dbModel.quotes,
+        "author":dbModel.author,
       });
     }
 
+  Future<List<DbModel>> readQuotes() async {
+    dataBase = await checkDb();
+    String query = "SELECT * FROM quotes";
+    List<Map> data = await dataBase!.rawQuery(query, null);
+    List<DbModel> modelList = data.map((e) => DbModel.mapToModel(e)).toList();
+    return modelList;
+  }
+  Future<void> quotesDelete({required String id}) async {
+    dataBase = await checkDb();
+    dataBase!.delete("quotes", where: "id=?", whereArgs: [id]);
+  }
 }

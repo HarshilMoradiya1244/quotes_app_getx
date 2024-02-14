@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:quotes_app_getx/model/db_model.dart';
 import 'package:quotes_app_getx/model/quotes_model.dart';
 import 'package:quotes_app_getx/utils/colorList.dart';
 import 'package:quotes_app_getx/utils/db_helper.dart';
@@ -48,19 +49,30 @@ class _QuotesScreenState extends State<QuotesScreen> {
                                 fontSize: 15, fontWeight: FontWeight.bold),
                             overflow: TextOverflow.clip,
                             maxLines: 2,
-                          )),
-                      const SizedBox(height: 10,),
-                      Text("${model.authorList[index]}",style: const TextStyle(
-                          fontSize: 15, fontWeight: FontWeight.bold),),
+                          ),
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Text(
+                        "${model.authorList[index]}",
+                        style: const TextStyle(
+                            fontSize: 15, fontWeight: FontWeight.bold),
+                      ),
                       Align(
-                          alignment: Alignment.bottomRight,
-                          child: IconButton(
-                              onPressed: () {
-                                QuotesModel model1 = QuotesModel(authorList:[model.authorList[index]] ,qoutesList: [model.qoutesList[index]],category: model.category);
-                                DBHelper dbHelper = DBHelper();
-                                dbHelper.insertData(model1);
-                              },
-                              icon: const Icon(Icons.favorite_border)))
+                        alignment: Alignment.bottomRight,
+                        child: IconButton(
+                          onPressed: () {
+                            DbModel dbModel = DbModel(
+                                author: model.authorList[index],
+                                quotes: model.qoutesList[index],
+                                category: model.category);
+                            DBHelper dbHelper = DBHelper();
+                            dbHelper.insertData(dbModel);
+                          },
+                          icon: const Icon(Icons.favorite_border),
+                        ),
+                      ),
                     ],
                   ),
                 ),
