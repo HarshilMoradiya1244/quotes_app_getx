@@ -13,8 +13,6 @@ class QuotesScreen extends StatefulWidget {
 
 class _QuotesScreenState extends State<QuotesScreen> {
   QuotesModel model = Get.arguments;
-  TextEditingController txtQoutes = TextEditingController();
-  TextEditingController txtAuthor = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -51,14 +49,14 @@ class _QuotesScreenState extends State<QuotesScreen> {
                             overflow: TextOverflow.clip,
                             maxLines: 2,
                           )),
-                      SizedBox(height: 10,),
+                      const SizedBox(height: 10,),
                       Text("${model.authorList[index]}",style: const TextStyle(
                           fontSize: 15, fontWeight: FontWeight.bold),),
                       Align(
                           alignment: Alignment.bottomRight,
                           child: IconButton(
                               onPressed: () {
-                                QuotesModel model1 = QuotesModel(qoutesList: [txtQoutes.text], authorList: [txtAuthor.text]);
+                                QuotesModel model1 = QuotesModel(authorList:[model.authorList[index]] ,qoutesList: [model.qoutesList[index]],category: model.category);
                                 DBHelper dbHelper = DBHelper();
                                 dbHelper.insertData(model1);
                               },

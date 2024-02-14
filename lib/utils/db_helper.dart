@@ -23,7 +23,7 @@ class DBHelper{
 
     return openDatabase(path, version: 1, onCreate: (db, version) {
       String incomeTable =
-          "CREATE TABLE quotes(id INTEGER PRIMARY KEY AUTOINCREMENT,name TEXT, quotes TEXT, category TEXT,author TEXT)";
+          "CREATE TABLE quotes(id INTEGER PRIMARY KEY AUTOINCREMENT, quotes TEXT, category TEXT,author TEXT)";
       String categoryTable =
           "CREATE TABLE category(id INTEGER PRIMARY KEY AUTOINCREMENT,quotes TEXT, category TEXT,author TEXT)";
       db.execute(incomeTable);
