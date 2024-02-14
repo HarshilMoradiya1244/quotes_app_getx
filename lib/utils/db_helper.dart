@@ -23,7 +23,7 @@ class DBHelper{
 
     return openDatabase(path, version: 1, onCreate: (db, version) {
       String incomeTable =
-          "CREATE TABLE quotes(id INTEGER PRIMARY KEY AUTOINCREMENT, quotes TEXT, category TEXT,author TEXT)";
+          "CREATE TABLE quotesTable(id INTEGER PRIMARY KEY AUTOINCREMENT, quotes TEXT, category TEXT,author TEXT)";
       String categoryTable =
           "CREATE TABLE category(id INTEGER PRIMARY KEY AUTOINCREMENT,quotes TEXT, category TEXT,author TEXT)";
       db.execute(incomeTable);
@@ -33,10 +33,10 @@ class DBHelper{
 
     Future<void> insertData(QuotesModel quotesModel) async {
       dataBase = await checkDb();
-      dataBase!.insert("quotes", {
+      dataBase!.insert("quotesTable", {
         "category":quotesModel.category,
-        "qoutesList":quotesModel.qoutesList,
-        "authorList":quotesModel.authorList,
+        "quotes":quotesModel.qoutesList,
+        "author":quotesModel.authorList,
       });
     }
 
