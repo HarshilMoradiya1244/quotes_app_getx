@@ -31,14 +31,17 @@ class _HomeScreenState extends State<HomeScreen> {
                    itemBuilder: (context) {
                      return [
                      PopupMenuItem(
-                       child: Row(
-                         children: [
-
-                           IconButton(onPressed: (){
-                             Get.toNamed("likedQuotes");
-                           }, icon: const Icon(Icons.favorite_border),),
-                           const Text("Favorite"),
-                         ],
+                       child: InkWell(
+                         onTap: (){
+                           Get.toNamed("likedQuotes");
+                         },
+                         child: Row(
+                           children: [
+                             IconButton(onPressed: (){
+                             }, icon: const Icon(Icons.favorite_border),),
+                             const Text("Favorite"),
+                           ],
+                         ),
                        ),
                      ),
                      ];
