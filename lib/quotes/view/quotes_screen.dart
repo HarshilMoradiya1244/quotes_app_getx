@@ -25,7 +25,7 @@ class _QuotesScreenState extends State<QuotesScreen> {
         appBar: AppBar(
           centerTitle: true,
           title:  Text("${model.category}"),
-          actions: [
+          acti ons: [
             IconButton(onPressed: (){
               // DbModel dbModel = DbModel();
               // DBHelper dbHelper = DBHelper();
