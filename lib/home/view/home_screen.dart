@@ -64,11 +64,13 @@ class _HomeScreenState extends State<HomeScreen> {
                      PopupMenuItem(
                        child: Row(
                          children: [
-                         Switch(value: themeController.isLight.value, onChanged: (value) {
-                           ShareHelper shr =ShareHelper();
-                           shr.setTheme(value);
-                           themeController.changeThem();
-                         },),
+                         Obx(() =>
+                           Switch(value: themeController.isLight.value, onChanged: (value) {
+                             ShareHelper shr =ShareHelper();
+                             shr.setTheme(value);
+                             themeController.changeThem();
+                           },),
+                         ),
                            const Text("ChangeTheme"),
                          ],
                        ),
