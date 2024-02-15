@@ -64,7 +64,7 @@ class _LikedQuotesScreenState extends State<LikedQuotesScreen> {
                           Text(
                             "${controller.dataList[index].author}",
                             style: const TextStyle(
-                                fontSize: 15, fontWeight: FontWeight.bold),
+                                fontSize: 15, fontWeight: FontWeight.bold,color: Colors.black),
                           ),
                           Align(
                             alignment: Alignment.bottomRight,
