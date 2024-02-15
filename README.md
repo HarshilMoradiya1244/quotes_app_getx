@@ -15,9 +15,12 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
+APK File : 
 
 <a href="https://drive.google.com/file/d/16UEIFzevzcwZV8Muumaj-6se9YaTPcAe/view?usp=sharing"> <img src="https://github.com/HarshilMoradiya1244/weather_project/assets/142592789/f41e8f8f-04d7-44cd-8ab1-d9adb15028f5" height ="200" width="200"></a>
 
+
+Screen Shot :
 
 <p>
   <img src="https://github.com/HarshilMoradiya1244/quotes_app_getx/assets/142592789/11154bc6-1944-4330-8fae-22bc7f50c6ea",height="1000"width="200">
@@ -26,6 +29,8 @@ samples, guidance on mobile development, and a full API reference.
   <img src="https://github.com/HarshilMoradiya1244/quotes_app_getx/assets/142592789/9d2d4d93-6b0e-4485-a87d-d03ba62f4aba",height="1000"width="200">
 </p>
 
+
+Video:
 
 https://github.com/HarshilMoradiya1244/quotes_app_getx/assets/142592789/688731de-a8ff-4a87-9c2f-0f978c807a84
 
