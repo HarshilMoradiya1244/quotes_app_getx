@@ -27,8 +27,9 @@ class _QuotesScreenState extends State<QuotesScreen> {
           title:  Text("${model.category}"),
           actions: [
             IconButton(onPressed: (){
-              DBHelper dbHelper = DBHelper();
-              dbHelper.insertCategory(controller.quotesList as DbModel);
+              // DbModel dbModel = DbModel();
+              // DBHelper dbHelper = DBHelper();
+              // dbHelper.insertCategory();
             }, icon: const Icon(Icons.favorite_border))
           ],
         ),
@@ -55,7 +56,7 @@ class _QuotesScreenState extends State<QuotesScreen> {
                           child: Text(
                             "${model.qoutesList[index]}",
                             style: const TextStyle(
-                                fontSize: 15, fontWeight: FontWeight.bold),
+                                fontSize: 15, fontWeight: FontWeight.bold,color: Colors.black),
                             overflow: TextOverflow.clip,
                             maxLines: 2,
                           ),
@@ -66,7 +67,7 @@ class _QuotesScreenState extends State<QuotesScreen> {
                       Text(
                         "${model.authorList[index]}",
                         style: const TextStyle(
-                            fontSize: 15, fontWeight: FontWeight.bold),
+                            fontSize: 15, fontWeight: FontWeight.bold,color: Colors.black),
                       ),
                       Align(
                         alignment: Alignment.bottomRight,
@@ -78,8 +79,9 @@ class _QuotesScreenState extends State<QuotesScreen> {
                                 category: model.category);
                             DBHelper dbHelper = DBHelper();
                             dbHelper.insertData(dbModel);
+                            Get.snackbar("Add Successfully", "Check In Favorite");
                           },
-                          icon: const Icon(Icons.favorite_border),
+                          icon: const Icon(Icons.favorite_border,color: Colors.black,),
                         ),
                       ),
                     ],

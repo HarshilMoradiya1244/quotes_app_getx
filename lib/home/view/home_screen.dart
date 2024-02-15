@@ -104,7 +104,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               mainAxisAlignment: MainAxisAlignment.start,
                               children: [
-                                Text("${controller.quotesList[index].category}",style: const TextStyle(fontSize: 15,fontWeight:FontWeight.bold),),
+                                Text("${controller.quotesList[index].category}",style: const TextStyle(fontSize: 15,fontWeight:FontWeight.bold,color: Colors.black),),
                                 const Spacer(),
                                 Image.asset("${controller.quotesList[index].image}",height: 50,width: 50,)
                               ],
