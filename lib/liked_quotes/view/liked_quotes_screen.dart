@@ -53,7 +53,7 @@ class _LikedQuotesScreenState extends State<LikedQuotesScreen> {
                             child: Text(
                               "${controller.dataList[index].quotes}",
                               style: const TextStyle(
-                                  fontSize: 15, fontWeight: FontWeight.bold),
+                                  fontSize: 15, fontWeight: FontWeight.bold,color: Colors.black),
                               overflow: TextOverflow.clip,
                               maxLines: 2,
                             ),
@@ -75,7 +75,7 @@ class _LikedQuotesScreenState extends State<LikedQuotesScreen> {
                                 controller.getData();
                                 Get.snackbar("Delete Successfully", "Delete");
                               },
-                              icon: const Icon(Icons.favorite),
+                              icon: const Icon(Icons.favorite,color: Colors.black,),
                             ),
                           ),
                         ],
