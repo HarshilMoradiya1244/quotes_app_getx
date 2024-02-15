@@ -7,4 +7,5 @@ Map<String,WidgetBuilder> screen_routes = {
   '/':(context) => const HomeScreen(),
   'quotes':(context) => const QuotesScreen(),
   'likedQuotes':(context) => const LikedQuotesScreen(),
+  'likedCategory':(context) => const LikedQuotesScreen(),
 };

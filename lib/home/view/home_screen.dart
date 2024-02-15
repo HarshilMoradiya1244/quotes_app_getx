@@ -42,7 +42,21 @@ class _HomeScreenState extends State<HomeScreen> {
                            children: [
                              IconButton(onPressed: (){
                              }, icon: const Icon(Icons.favorite_border),),
-                             const Text("Favorite"),
+                             const Text("Favorite Quotes"),
+                           ],
+                         ),
+                       ),
+                     ),
+                     PopupMenuItem(
+                       child: InkWell(
+                         onTap: (){
+                           Get.toNamed("likedCategory");
+                         },
+                         child: Row(
+                           children: [
+                             IconButton(onPressed: (){
+                             }, icon: const Icon(Icons.favorite_border),),
+                             const Text("Favorite Category"),
                            ],
                          ),
                        ),

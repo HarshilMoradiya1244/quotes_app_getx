@@ -40,6 +40,14 @@ class DBHelper{
         "author":dbModel.author,
       });
     }
+    Future<void> insertCategory(DbModel dbModel) async {
+      dataBase = await checkDb();
+      dataBase!.insert("category", {
+        "category":dbModel.category,
+        "quotes":dbModel.quotes,
+        "author":dbModel.author,
+      });
+    }
 
   Future<List<DbModel>> readQuotes() async {
     dataBase = await checkDb();
@@ -48,8 +56,20 @@ class DBHelper{
     List<DbModel> modelList = data.map((e) => DbModel.mapToModel(e)).toList();
     return modelList;
   }
+  Future<List<DbModel>> readCategory() async {
+    dataBase = await checkDb();
+    String query = "SELECT * FROM category";
+    List<Map> data = await dataBase!.rawQuery(query, null);
+    List<DbModel> modelList = data.map((e) => DbModel.mapToModel(e)).toList();
+    return modelList;
+  }
+
   Future<void> quotesDelete({required String id}) async {
     dataBase = await checkDb();
     dataBase!.delete("quotes", where: "id=?", whereArgs: [id]);
+  }
+  Future<void> categoryDelete({required String id}) async {
+    dataBase = await checkDb();
+    dataBase!.delete("category", where: "id=?", whereArgs: [id]);
   }
 }

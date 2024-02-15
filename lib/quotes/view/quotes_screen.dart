@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:quotes_app_getx/home/controller/home_controller.dart';
+import 'package:quotes_app_getx/main.dart';
 import 'package:quotes_app_getx/model/db_model.dart';
 import 'package:quotes_app_getx/model/quotes_model.dart';
 import 'package:quotes_app_getx/utils/colorList.dart';
@@ -14,6 +16,7 @@ class QuotesScreen extends StatefulWidget {
 
 class _QuotesScreenState extends State<QuotesScreen> {
   QuotesModel model = Get.arguments;
+  HomeController controller = Get.put(HomeController());
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +24,13 @@ class _QuotesScreenState extends State<QuotesScreen> {
       child: Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          title: const Text("Qoutes"),
+          title:  Text("${model.category}"),
+          actions: [
+            IconButton(onPressed: (){
+              DBHelper dbHelper = DBHelper();
+              dbHelper.insertCategory(controller.quotesList as DbModel);
+            }, icon: const Icon(Icons.favorite_border))
+          ],
         ),
         body: ListView.builder(
           itemCount: model.qoutesList.length,
