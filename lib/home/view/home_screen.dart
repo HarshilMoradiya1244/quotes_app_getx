@@ -3,6 +3,8 @@ import 'package:get/get.dart';
 import 'package:quotes_app_getx/home/controller/home_controller.dart';
 import 'package:quotes_app_getx/utils/colorList.dart';
 import 'package:quotes_app_getx/utils/db_helper.dart';
+import 'package:quotes_app_getx/utils/share_helper.dart';
+import 'package:quotes_app_getx/utils/theme_controller.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -13,6 +15,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   HomeController controller = Get.put(HomeController());
+  ThemeController themeController = Get.put(ThemeController());
 
   @override
   void initState() {
@@ -42,6 +45,18 @@ class _HomeScreenState extends State<HomeScreen> {
                              const Text("Favorite"),
                            ],
                          ),
+                       ),
+                     ),
+                     PopupMenuItem(
+                       child: Row(
+                         children: [
+                         Switch(value: themeController.isLight.value, onChanged: (value) {
+                           ShareHelper shr =ShareHelper();
+                           shr.setTheme(value);
+                           themeController.changeThem();
+                         },),
+                           const Text("ChangeTheme"),
+                         ],
                        ),
                      ),
                      ];

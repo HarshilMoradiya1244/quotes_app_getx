@@ -3,13 +3,12 @@ import 'package:quotes_app_getx/utils/share_helper.dart';
 
 class ThemeController extends GetxController{
 
-  bool isLight = true;
-  bool changeUI=false;
+  RxBool isLight = true.obs;
 
   void changeThem() async {
     ShareHelper shr = ShareHelper();
     bool? isTheme = await shr.getTheme();
-    isLight = isTheme ?? false;
+    isLight.value = isTheme ?? false;
   }
 
 }
