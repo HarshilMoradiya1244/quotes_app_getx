@@ -73,6 +73,7 @@ class _LikedQuotesScreenState extends State<LikedQuotesScreen> {
                                 DBHelper dbHelper = DBHelper();
                                 dbHelper.quotesDelete(id:"${controller.dataList[index].id}");
                                 Get.back();
+                                Get.snackbar("Delete Successfully", "Delete");
                               },
                               icon: const Icon(Icons.favorite),
                             ),
