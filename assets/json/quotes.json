@@ -2,7 +2,7 @@
   {
     "id": 1,
     "category": "Success",
-    "image":"assets/images/Success.png",
+    "image": "assets/images/Success.png",
     "quotes": [
       " All our dreams can come true if we have the courage to pursue them.",
       " There is little success where there is little laughter.",
@@ -10,37 +10,51 @@
       " They succeed, because they think they can.",
       " It takes 20 years to make an overnight success."
     ],
-    "author" : [
+    "author": [
       " - Walt Disney",
       " - Andrew Carnegie",
       " - Douglas MacArthur",
       " - Douglas MacArthur",
       " - Eddie Cantor"
+    ],
+    "bg": [
+      "assets/images/bg/img 1.jpeg",
+      "assets/images/bg/img 2.jpeg",
+      "assets/images/bg/img 3.jpeg",
+      "assets/images/bg/img 4.jpeg",
+      "assets/images/bg/img 5.jpeg"
     ]
   },
   {
     "id": 2,
     "category": "Motivational",
-    "image":"assets/images/Motivation.png",
+    "image": "assets/images/Motivation.png",
     "quotes": [
       " Learn as if you will live forever, live like you will die tomorrow.",
-      " Don’t let yesterday take up too much of today. "               ,
+      " Don’t let yesterday take up too much of today. ",
       " It is better to fail in originality than to succeed in imitation.",
-      " Success usually comes to those who are too busy looking for it." ,
+      " Success usually comes to those who are too busy looking for it.",
       " Success is getting what you want, happiness is wanting what you get."
     ],
-    "author" : [
+    "author": [
       " - Mahatma Gandhi",
       " - Will Rogers",
       " - Herman Melville",
       " - Henry David Thoreau",
       " - Douglas MacArthur"
+    ],
+    "bg": [
+      "assets/images/bg/img 1.jpeg",
+      "assets/images/bg/img 2.jpeg",
+      "assets/images/bg/img 3.jpeg",
+      "assets/images/bg/img 4.jpeg",
+      "assets/images/bg/img 5.jpeg"
     ]
   },
   {
     "id": 3,
     "category": "Single",
-    "image":"assets/images/Single.png",
+    "image": "assets/images/Single.png",
     "quotes": [
       " Relationship Status: sleeping in my bed diagonally.",
       " Just because I’m single, It doesn’t, mean I’m alone. I have food and internet.",
@@ -48,18 +62,25 @@
       " Current relationship status: Made dinner for two ate both.",
       " When someone asks me why I’m still single. I guess I’m overqualified!"
     ],
-    "author" : [
+    "author": [
       " - Benjamin Disraeli",
       " - Henry David Thoreau",
       " - Edwin H. Chapin",
       " - Milton Berle",
       " - Milton Berle"
+    ],
+    "bg": [
+      "assets/images/bg/img 1.jpeg",
+      "assets/images/bg/img 2.jpeg",
+      "assets/images/bg/img 3.jpeg",
+      "assets/images/bg/img 4.jpeg",
+      "assets/images/bg/img 5.jpeg"
     ]
   },
   {
     "id": 4,
     "category": "Lonely",
-    "image":"assets/images/Lonely.png",
+    "image": "assets/images/Lonely.png",
     "quotes": [
       " You’re not alone. I’m awake and I’ve been thinking of you. ",
       " Lonely, I’m so lonely, I have nobody to call my own.",
@@ -67,18 +88,25 @@
       " We’re happy, free, confused, and lonely at the same time.",
       " I walk a lonely road, the only one that I have ever known."
     ],
-    "author" : [
+    "author": [
       " - Kygo",
       " - Akon",
       " - Robyn",
       " - Taylor Swift",
       " - Green Day"
+    ],
+    "bg": [
+      "assets/images/bg/img 1.jpeg",
+      "assets/images/bg/img 2.jpeg",
+      "assets/images/bg/img 3.jpeg",
+      "assets/images/bg/img 4.jpeg",
+      "assets/images/bg/img 5.jpeg"
     ]
   },
   {
     "id": 5,
     "category": "Attitude",
-    "image":"assets/images/Attitude.png",
+    "image": "assets/images/Attitude.png",
     "quotes": [
       " I don’t think of all the misery but of the beauty that still remains.",
       " Optimism is the faith that leads to achievement; nothing can be done without hope.",
@@ -86,18 +114,25 @@
       " You always pass failure on the way to success.",
       " Perpetual optimism is a force multiplier."
     ],
-    "author" : [
+    "author": [
       " - Anne Frank",
       " - Helen Keller",
       " - Eleanor Roosevelt",
       " - Mickey Rooney",
       " - Colin Powell"
+    ],
+    "bg": [
+      "assets/images/bg/img 1.jpeg",
+      "assets/images/bg/img 2.jpeg",
+      "assets/images/bg/img 3.jpeg",
+      "assets/images/bg/img 4.jpeg",
+      "assets/images/bg/img 5.jpeg"
     ]
   },
   {
     "id": 6,
     "category": "Happiness",
-    "image":"assets/images/Happiness.png",
+    "image": "assets/images/Happiness.png",
     "quotes": [
       " The only joy in the world is to begin.",
       " It is only possible to live happily ever after on a daily basis.",
@@ -105,18 +140,25 @@
       " Remember this, that very little is needed to make a happy life.",
       " I wake up every morning with a great desire to live joyfully."
     ],
-    "author" : [
+    "author": [
       " - Cesare Pavese",
       " - Margaret Bonanno",
       " - Epictetus",
       " - Marcus Aurelius",
       " - Anna Howard Shaw"
+    ],
+    "bg": [
+      "assets/images/bg/img 1.jpeg",
+      "assets/images/bg/img 2.jpeg",
+      "assets/images/bg/img 3.jpeg",
+      "assets/images/bg/img 4.jpeg",
+      "assets/images/bg/img 5.jpeg"
     ]
   },
   {
     "id": 7,
     "category": "Best",
-    "image":"assets/images/Best.png",
+    "image": "assets/images/Best.png",
     "quotes": [
       " The way to get started is to quit talking and begin doing.",
       " The only thing we have to fear is fear itself.",
@@ -124,18 +166,25 @@
       " Well done is better than well said.",
       " Be yourself; everyone else is already taken."
     ],
-    "author" : [
+    "author": [
       " - Walt Disney",
       " - Franklin D. Roosevelt",
       " - Eleanor Roosevelt",
       " - Marcus Aurelius",
       " - Oscar Wilde"
+    ],
+    "bg": [
+      "assets/images/bg/img 1.jpeg",
+      "assets/images/bg/img 2.jpeg",
+      "assets/images/bg/img 3.jpeg",
+      "assets/images/bg/img 4.jpeg",
+      "assets/images/bg/img 5.jpeg"
     ]
   },
   {
     "id": 8,
     "category": "Work",
-    "image":"assets/images/Work.png",
+    "image": "assets/images/Work.png",
     "quotes": [
       " Before anything else, preparation is the key to success.",
       " Make each day your masterpiece.",
@@ -143,18 +192,25 @@
       " We will fail when we fail to try.",
       " A year from now you may wish you had started today."
     ],
-    "author" : [
+    "author": [
       " - Alexander Graham Bell",
       " - John Wooden",
       " - Muhammad Ali",
       " - Rosa Parks",
       " - Karen Lamb"
+    ],
+    "bg": [
+      "assets/images/bg/img 1.jpeg",
+      "assets/images/bg/img 2.jpeg",
+      "assets/images/bg/img 3.jpeg",
+      "assets/images/bg/img 4.jpeg",
+      "assets/images/bg/img 5.jpeg"
     ]
   },
   {
     "id": 9,
     "category": "Thinking",
-    "image":"assets/images/Thinking.png",
+    "image": "assets/images/Thinking.png",
     "quotes": [
       " Friends are the family we choose.",
       " My purpose: to lift your spirit and to motivate you.",
@@ -162,18 +218,25 @@
       " Try to be a rainbow in someone else’s cloud.",
       " Happiness is not by chance but by choice."
     ],
-    "author" : [
+    "author": [
       " - Jennifer Aniston",
       " - Mavis Staples",
       " - George Skolsky",
       " - Maya Angelou",
       " - Jim Rohn"
+    ],
+    "bg": [
+      "assets/images/bg/img 1.jpeg",
+      "assets/images/bg/img 2.jpeg",
+      "assets/images/bg/img 3.jpeg",
+      "assets/images/bg/img 4.jpeg",
+      "assets/images/bg/img 5.jpeg"
     ]
   },
   {
     "id": 10,
     "category": "Love",
-    "image":"assets/images/Love.png",
+    "image": "assets/images/Love.png",
     "quotes": [
       " I’ll be loving you, always with a love that’s true",
       " I need you like a heart needs a beat.",
@@ -181,12 +244,19 @@
       " You make me want to be a better man.",
       " Women are meant to be loved, not to be understood."
     ],
-    "author" : [
+    "author": [
       " - Patsy Cline",
       " - One Republic",
       " - Robert Browning",
       " - Melvin Udall",
       " - Oscar Wilde"
+    ],
+    "bg": [
+      "assets/images/bg/img 1.jpeg",
+      "assets/images/bg/img 2.jpeg",
+      "assets/images/bg/img 3.jpeg",
+      "assets/images/bg/img 4.jpeg",
+      "assets/images/bg/img 5.jpeg"
     ]
   }
 ]

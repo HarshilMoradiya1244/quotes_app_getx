@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:quotes_app_getx/liked_quotes/controller/liked_quotes_controller.dart';
-import 'package:quotes_app_getx/model/db_model.dart';
+import 'package:quotes_app_getx/screen/liked_quotes/controller/liked_quotes_controller.dart';
 import 'package:quotes_app_getx/utils/colorList.dart';
 import 'package:quotes_app_getx/utils/db_helper.dart';
 

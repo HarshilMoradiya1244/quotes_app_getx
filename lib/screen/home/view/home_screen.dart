@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:quotes_app_getx/home/controller/home_controller.dart';
+import 'package:quotes_app_getx/screen/home/controller/home_controller.dart';
 import 'package:quotes_app_getx/utils/colorList.dart';
-import 'package:quotes_app_getx/utils/db_helper.dart';
 import 'package:quotes_app_getx/utils/share_helper.dart';
 import 'package:quotes_app_getx/utils/theme_controller.dart';
 
@@ -22,6 +21,8 @@ class _HomeScreenState extends State<HomeScreen> {
     super.initState();
     controller.getData();
   }
+
+  @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
