@@ -49,20 +49,6 @@ class _HomeScreenState extends State<HomeScreen> {
                        ),
                      ),
                      PopupMenuItem(
-                       child: InkWell(
-                         onTap: (){
-                           Get.toNamed("likedCategory");
-                         },
-                         child: Row(
-                           children: [
-                             IconButton(onPressed: (){
-                             }, icon: const Icon(Icons.favorite_border),),
-                             const Text("Favorite Category"),
-                           ],
-                         ),
-                       ),
-                     ),
-                     PopupMenuItem(
                        child: Row(
                          children: [
                          Obx(() =>
